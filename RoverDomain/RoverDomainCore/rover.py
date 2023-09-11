@@ -1,7 +1,7 @@
 import numpy as np
 import sys
-from parameters import parameters as p
-from global_functions import get_squared_dist, get_angle
+from RoverDomain.parameters import parameters as p
+from RoverDomain.global_functions import get_squared_dist, get_angle
 
 
 class Rover:

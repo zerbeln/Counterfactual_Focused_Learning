@@ -1,13 +1,13 @@
 from RoverDomainCore.rover_domain import RoverDomain
 from Visualizer.visualizer import run_visualizer
 import numpy as np
-from parameters import parameters as p
-from global_functions import create_pickle_file
+from RoverDomain.parameters import parameters as p
+from RoverDomain.global_functions import create_pickle_file
 import random
 import math
 import csv
 import os
-from global_functions import get_linear_dist
+from RoverDomain.global_functions import get_linear_dist
 
 
 def save_poi_configuration(pois_info, config_id):

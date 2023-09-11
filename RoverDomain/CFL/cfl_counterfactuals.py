@@ -1,4 +1,4 @@
-from parameters import parameters as p
+from RoverDomain.parameters import parameters as p
 
 
 def generate_high_low_counterfactuals(pois):

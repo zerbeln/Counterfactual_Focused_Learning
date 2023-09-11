@@ -5,7 +5,7 @@ import math
 import os
 import csv
 import pickle
-from parameters import parameters as p
+from RoverDomain.parameters import parameters as p
 
 pygame.font.init()  # you have to call this at the start, if you want to use this module
 myfont = pygame.font.SysFont('Comic Sans MS', 30)

@@ -1,10 +1,10 @@
-from EvolutionaryAlgorithms.ccea import CCEA
-from NeuralNetworks.neural_network import NeuralNetwork
-from RoverDomainCore.reward_functions import calc_difference, calc_dpp
-from RoverDomainCore.rover_domain import RoverDomain
+from RoverDomain.EvolutionaryAlgorithms.ccea import CCEA
+from RoverDomain.NeuralNetworks.neural_network import NeuralNetwork
+from RoverDomain.RoverDomainCore.reward_functions import calc_difference, calc_dpp
+from RoverDomain.RoverDomainCore.rover_domain import RoverDomain
 import numpy as np
-from parameters import parameters as p
-from global_functions import create_csv_file, save_best_policies, create_pickle_file
+from RoverDomain.parameters import parameters as p
+from RoverDomain.global_functions import create_csv_file, save_best_policies, create_pickle_file
 
 
 def sample_best_team(rd, pops, networks):

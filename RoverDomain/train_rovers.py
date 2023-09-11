@@ -1,6 +1,6 @@
-from parameters import parameters as p
-from standard_rover_domain import rover_global, rover_difference, rover_dpp
-from CFL.cfl import rover_cdpp, rover_cdif
+from RoverDomain.parameters import parameters as p
+from RoverDomain.standard_rover_domain import rover_global, rover_difference, rover_dpp
+from RoverDomain.CFL.cfl import rover_cdpp, rover_cdif
 
 
 if __name__ == '__main__':

@@ -1,5 +1,5 @@
-from global_functions import get_linear_dist
-from parameters import parameters as p
+from RoverDomain.global_functions import get_linear_dist
+from RoverDomain.parameters import parameters as p
 import numpy as np
 
 

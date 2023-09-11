@@ -1,6 +1,6 @@
 import numpy as np
 import copy
-from parameters import parameters as p
+from RoverDomain.parameters import parameters as p
 
 
 # DIFFERENCE REWARD --------------------------------------------------------------------------------------------------

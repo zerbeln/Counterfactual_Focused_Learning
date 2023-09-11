@@ -1,9 +1,9 @@
 import numpy as np
 import csv
 import copy
-from parameters import parameters as p
-from RoverDomainCore.rover import Rover
-from RoverDomainCore.poi import POI
+from RoverDomain.parameters import parameters as p
+from RoverDomain.RoverDomainCore.rover import Rover
+from RoverDomain.RoverDomainCore.poi import POI
 
 
 class RoverDomain:

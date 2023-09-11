@@ -4,10 +4,9 @@ parameters = {}
 parameters["starting_srun"] = 0  # Which stat run should testing start on (used for parallel testing)
 parameters["stat_runs"] = 15  # Total number of runs to perform
 parameters["generations"] = 3000  # Number of generations for CCEA in each stat run
-parameters["algorithm"] = "CFL"  # Global, Difference, DPP (D++), CKI, CFL, ACG
+parameters["algorithm"] = "CFL"  # Global, Difference, DPP (D++), CFL
 parameters["sample_rate"] = 20  # Spacing for collecting performance data during training (every X generations)
 parameters["n_configurations"] = 1  # The number of environmental configurations used for training
-parameters["h_penalty"] = 10  # Penalty for entering hazard areas
 parameters["c_type"] = "Custom"  # Auto or Custom
 
 # Domain parameters
@@ -37,24 +36,6 @@ parameters["mutation_chance"] = 0.1  # Probability that a mutation will occur
 parameters["mutation_rate"] = 0.2  # How much a weight is allowed to change
 parameters["epsilon"] = 0.1  # For e-greedy selection in CCEA
 parameters["n_elites"] = 1  # How many elites to carry over during elite selection
-
-# CKI Parameters
-parameters["skill_type"] = "Target_POI"  # Target_Quadrant or Target_POI
-parameters["randomize_skills"] = False  # Rovers are learning different skills at different times when True 
-parameters["n_skills"] = parameters["n_poi"] + 1  # Number of pre-trained policies in the policy bank
-parameters["cki_inp"] = int(2 * (360 / parameters["angle_res"]))
-parameters["cki_hid"] = 12
-parameters["cki_out"] = parameters["n_skills"]
-
-# ACG Parameters
-parameters["sup_train"] = "Hazards"  # Hazards or Rover_Loss
-parameters["acg_inp"] = int(2 * (360 / parameters["angle_res"]))
-parameters["acg_hid"] = 12
-parameters["acg_out"] = parameters["n_inp"] * parameters["n_rovers"]
-parameters["acg_alg"] = "Difference"
-parameters["acg_generations"] = 2500
-parameters["rover_loss"] = [0]  # Number of rovers that will become nonfunctional in each configuration
-parameters["acg_configurations"] = parameters["n_configurations"]  # Configurations used for training supervisors
 
 # Post Training Test Parameters
 parameters["c_list_size"] = 10000

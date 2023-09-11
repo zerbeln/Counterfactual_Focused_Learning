@@ -1,7 +1,7 @@
 import numpy as np
 import copy
-from RoverDomainCore.reward_functions import calc_difference
-from parameters import parameters as p
+from RoverDomain.RoverDomainCore.reward_functions import calc_difference
+from RoverDomain.parameters import parameters as p
 
 
 def create_counterfactuals_DPP(n_counterfactuals, counterfactual, rover_dist):

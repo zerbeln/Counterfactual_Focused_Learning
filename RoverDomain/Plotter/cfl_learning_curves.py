@@ -2,7 +2,7 @@ import matplotlib.colors as mcolors
 import matplotlib.pyplot as plt
 import numpy as np
 import os
-from plots_common_functions import import_reward_data, get_standard_err_learning
+from RoverDomain.Plotter.plots_common_functions import import_reward_data, get_standard_err_learning
 import sys
 
 

@@ -1,10 +1,9 @@
-from RoverDomainCore.rover_domain import RoverDomain
-from Visualizer.visualizer import run_visualizer
-from NeuralNetworks.neural_network import NeuralNetwork
-from global_functions import load_saved_policies
+from RoverDomain.RoverDomainCore.rover_domain import RoverDomain
+from RoverDomain.Visualizer.visualizer import run_visualizer
+from RoverDomain.NeuralNetworks.neural_network import NeuralNetwork
+from RoverDomain.global_functions import load_saved_policies, create_csv_file, create_pickle_file
 import numpy as np
-from parameters import parameters as p
-from global_functions import create_csv_file, create_pickle_file
+from RoverDomain.parameters import parameters as p
 
 
 def test_trained_policy(config_id):

@@ -1,6 +1,6 @@
 import numpy as np
 import random
-from EvolutionaryAlgorithms.ea import EA
+from RoverDomain.EvolutionaryAlgorithms.ea import EA
 
 
 class CCEA(EA):
